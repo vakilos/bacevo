@@ -44,10 +44,13 @@ This pipeline identifies phase-variable regions in genome assemblies.
 
 
 ### (ii) _in vivo_:
+[`ep_figures_invivo.py`] calls `ep_enrichment.py` (Enrichment analysis), `ep_turnover.py` (Polymorphism turnover and dynamics) and `ep_figure_pcoa.py` (PCoA on Sampletypes)
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - [`ep_enrichment.py`](#ep_enrichment.py)
 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - [`ep_turnover.py`](#ep_turnvover.py)
 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - [`ep_figure_invivo.py`](#ep_figure_invivo.py)
 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - [`ep_figure_pcoa.py`](#ep_figure_pcoa.py)
+
 #### **Intestinal compartments**
 1. [`ep_comp_significant.py`](#ep_comp_significant.py)
 2. [`Maaslin2.R`](#Maaslin2.R)
