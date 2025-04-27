@@ -1,5 +1,5 @@
 # bacevo
-Scripts and workflow for analysis of experimental evolution datasets.
+Scripts and workflow for the analysis of experimental evolution datasets.
 
 This code has been developed for the data analysis in the following publications:
 <br> i. _Nutrient landscape shapes adaptive diversification of the prominent human
