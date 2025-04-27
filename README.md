@@ -10,10 +10,10 @@ gut commensal Bacteroides thetaiotaomicron_
 
 ## Polymorphism detection
 #### Preparation
-- Download RefSeq genome and annotation files, for example here for B. theta VPI:
+Download RefSeq genome and annotation files, for example here for B. theta VPI:
 [RefSeq link](https://ftp.ncbi.nlm.nih.gov/genomes/refseq/bacteria/Bacteroides_thetaiotaomicron/all_assembly_versions/GCF_000011065.1_ASM1106v1/) <br>
-- Prepare a _csv_ file that contains samples meta-data and add it in the project directory. It is expected that this files has the columns below:
 
+Prepare a _csv_ file that contains samples meta-data and add it in the project directory. It is expected that this files has the columns below:
 - &nbsp;&nbsp;SampleID (sequencing library ID)
 - &nbsp;&nbsp;MetagenomeID (same if metagenome - ID of the respective metagenomic sample if isolate)
 - &nbsp;&nbsp;Isolate (ID for isolate if any)
