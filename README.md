@@ -11,7 +11,7 @@ gut commensal Bacteroides thetaiotaomicron_
 Download RefSeq annotation files, for example here for B. theta VPI:
 [RefSeq link](https://ftp.ncbi.nlm.nih.gov/genomes/refseq/bacteria/Bacteroides_thetaiotaomicron/all_assembly_versions/GCF_000011065.1_ASM1106v1/) <br>
 
-1. Run [`ep_annotable.py`](./bacevo/scripts/ep_annotable.py) to create a table that stores RefSeq's annotation data.
+1. Run [`ep_annotable.py`](./scripts/ep_annotable.py) to create a table that stores RefSeq's annotation data.
 2. Run [`ep_start.py`](./scripts/ep_start.py) in a SLURM configured system to submit an array job comprising 
 multiple instances of the main pipeline which preprocesses sequencing reads and calls the breseq pipeline for a given number of samples.  
 3. Run [`ep_align_stats.py`](./scripts/ep_align_stats.py) to create reports of alignment statistics (parsed from _**Breseq**_'s output).
@@ -25,36 +25,36 @@ and estimate prevalence stats in the concatenated table, by running [`ep_merge_t
 
 ## Phase variation detection
 This pipeline identifies phase-variable regions in genome assemblies.
-1. [`ai_start.py`](#ai_start.py)
-2. [`ai_reverse_nodes`](#reverse_nodes.py) 
-3. [`ai_gene_order`](#ai_gene_order.py)
-4. [`ai_gene_alignment.py`](#ai_gene_alignment.py)
+1. [`ai_start.py`](./scripts/ai_start.py)
+2. [`ai_reverse_nodes`](./scripts/reverse_nodes.py) 
+3. [`ai_gene_order`](./scripts/ai_gene_order.py)
+4. [`ai_gene_alignment.py`](./scripts/ai_gene_alignment.py)
 
 ## _dNdS_ analysis
-1. [`dnds_from_table_invitro.py`](#dnds_from_table_invitro.py)
-2. [`dnds_concat.py`](#dnds_concat.py)
-3. [`dnds_figure_invivo.py`](#dnds_figure_invivo.py) or [`dnds_figure_invitro.py`](#dnds_figure_invitro.py)
+1. [`dnds_from_table_invitro.py`](./scripts/dnds_from_table_invitro.py)
+2. [`dnds_concat.py`](./scripts/dnds_concat.py)
+3. [`dnds_figure_invivo.py`](./scripts/dnds_figure_invivo.py) or [`dnds_figure_invitro.py`](./scripts/dnds_figure_invitro.py)
 
 
 
 ## Scripts for analysis specific to the manuscripts:
 ### (i) _in vitro_:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - [`ep_figure_invitro.py`](#ep_figure_invitro.py) - exports various tables for plotting in R.
-<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - `plot_invitro_figures.R` - creates plots 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - [`ep_figure_invitro.py`](./scripts/ep_figure_invitro.py) - exports various tables for plotting in R.
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - [`plot_invitro_figures.R`](./scripts/plot_invitro_figures.R) - creates plots 
 
 
 ### (ii) _in vivo_:
 [`ep_figures_invivo.py`] calls `ep_enrichment.py` (Enrichment analysis), `ep_turnover.py` (Polymorphism turnover and dynamics) and `ep_figure_pcoa.py` (PCoA on Sampletypes)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - [`ep_enrichment.py`](#ep_enrichment.py)
-<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - [`ep_turnover.py`](#ep_turnvover.py)
-<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - [`ep_figure_invivo.py`](#ep_figure_invivo.py)
-<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - [`ep_figure_pcoa.py`](#ep_figure_pcoa.py)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - [`ep_enrichment.py`](./scripts/ep_enrichment.py)
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - [`ep_turnover.py`](./scripts/ep_turnvover.py)
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - [`ep_figure_invivo.py`](./scripts/ep_figure_invivo.py)
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - [`ep_figure_pcoa.py`](./scripts/ep_figure_pcoa.py)
 
 #### **Intestinal compartments**
-1. [`ep_comp_significant.py`](#ep_comp_significant.py)
-2. [`Maaslin2.R`](#Maaslin2.R)
-3. [`ep_comp_select.py`](#ep_comp_select.py)
+1. [`ep_comp_significant.py`](./scripts/ep_comp_significant.py)
+2. [`Maaslin2.R`](./scripts/Maaslin2.R)
+3. [`ep_comp_select.py`](./scripts/ep_comp_select.py)
 
 #### **Poly clusters and shufflon signatures**
 We selected polymorphisms present in 80% of sampled timepoints
@@ -66,9 +66,9 @@ polymorphisms under the same cluster within 1000 bp distance on the genome. All 
 were masked for the rest of the analysis - as it is hard to distinguish _de novo_ mutations from false positive calls that appear due to
 inversions/ recombinations in these regions.
 
-1. [`pc_correlations.py`](#pc_correlations.py)
-2. [`pc_signatures.py`](#pc_signatures.py)
-3. [`pc_shufflons.py`](#pc_shufflons.py)
+1. [`pc_correlations.py`](./scripts/pc_correlations.py)
+2. [`pc_signatures.py`](./scripts/pc_signatures.py)
+3. [`pc_shufflons.py`](./scripts/pc_shufflons.py)
 
 
 
