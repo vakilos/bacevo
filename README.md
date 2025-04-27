@@ -24,7 +24,8 @@ an _in vitro_ context respectively.  (exports  _<name\>\_FinalPolyTable.tsv_)
 and estimate prevalence stats in the concatenated table, by running [`ep_merge_tables.py`](./scripts/ep_merge_tables.py)
 
 ## Phase variation detection
-This pipeline identifies phase-variable regions in genome assemblies.
+This pipeline identifies phase-variable regions in genome assemblies. 
+Execution order.
 1. [`ai_start.py`](./scripts/ai_start.py)
 2. [`ai_reverse_nodes.py`](./scripts/reverse_nodes.py) 
 3. [`ai_gene_order.py`](./scripts/ai_gene_order.py)
