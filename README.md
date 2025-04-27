@@ -30,7 +30,7 @@ This pipeline identifies phase-variable regions in genome assemblies.
 3. [`ai_gene_order`](#ai_gene_order.py)
 4. [`ai_gene_alignment.py`](#ai_gene_alignment.py)
 
-#### _dNdS_ analysis
+## _dNdS_ analysis
 1. [`dnds_from_table_invitro.py`](#dnds_from_table_invitro.py)
 2. [`dnds_concat.py`](#dnds_concat.py)
 3. [`dnds_figure_invivo.py`](#dnds_figure_invivo.py) or [`dnds_figure_invitro.py`](#dnds_figure_invitro.py)
