@@ -2,7 +2,6 @@
 Scripts and workflow for the analysis of experimental evolution datasets.
 
 This code has been developed for the data analysis in the following publications:
-
 <br> i. _Nutrient landscape shapes adaptive diversification of the prominent human
 gut commensal Bacteroides thetaiotaomicron_ 
 <br> ii. _Rapid genetic diversification of Bacteroides thetaiotaomicron in mono-associated mice revealed through deep population-level sequencing_
