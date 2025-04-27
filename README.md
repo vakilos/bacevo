@@ -26,8 +26,8 @@ and estimate prevalence stats in the concatenated table, by running [`ep_merge_t
 ## Phase variation detection
 This pipeline identifies phase-variable regions in genome assemblies.
 1. [`ai_start.py`](./scripts/ai_start.py)
-2. [`ai_reverse_nodes`](./scripts/reverse_nodes.py) 
-3. [`ai_gene_order`](./scripts/ai_gene_order.py)
+2. [`ai_reverse_nodes.py`](./scripts/reverse_nodes.py) 
+3. [`ai_gene_order.py`](./scripts/ai_gene_order.py)
 4. [`ai_gene_alignment.py`](./scripts/ai_gene_alignment.py)
 
 ## _dNdS_ analysis
