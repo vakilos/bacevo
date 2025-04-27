@@ -34,6 +34,9 @@ This pipeline identifies phase-variable regions in genome assemblies.
 4. [`ai_gene_alignment.py`](./scripts/ai_gene_alignment.py)
 
 ## _dNdS_ analysis
+
+<span style="color:red">Pipeline Execution order</span>  
+
 1. [`dnds_from_table_invitro.py`](./scripts/dnds_from_table_invitro.py)
 2. [`dnds_concat.py`](./scripts/dnds_concat.py)
 3. [`dnds_figure_invivo.py`](./scripts/dnds_figure_invivo.py) or [`dnds_figure_invitro.py`](./scripts/dnds_figure_invitro.py)
@@ -55,6 +58,9 @@ This pipeline identifies phase-variable regions in genome assemblies.
 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - [`ep_figure_pcoa.py`](./scripts/ep_figure_pcoa.py)
 
 #### **Intestinal compartments**
+
+<span style="color:red">Pipeline Execution order</span>  
+
 1. [`ep_comp_significant.py`](./scripts/ep_comp_significant.py)
 2. [`Maaslin2.R`](./scripts/Maaslin2.R)
 3. [`ep_comp_select.py`](./scripts/ep_comp_select.py)
@@ -68,6 +74,8 @@ recursively, until no polymorphisms remained unclustered. Then, shufflon signatu
 polymorphisms under the same cluster within 1000 bp distance on the genome. All polymorphisms within shuffling regions
 were masked for the rest of the analysis - as it is hard to distinguish _de novo_ mutations from false positive calls that appear due to
 inversions/ recombinations in these regions.
+
+<span style="color:red">Pipeline Execution order</span>  
 
 1. [`pc_correlations.py`](./scripts/pc_correlations.py)
 2. [`pc_signatures.py`](./scripts/pc_signatures.py)
