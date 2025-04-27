@@ -47,11 +47,11 @@ Pipeline Execution order:
 
 ## _dNdS_ analysis
 This analysis relies on alignment files after mapping reads to a reference genome (BAM files).
-Files should be organised in directories per sample.
+Files should be organised in directories per sample. The first step of the pipeline will export files in a created (if not present) _dnds_ directory. Files in this directory will need to be removed if need to be replaced or run analysis again, as they are NOT overwritten. Then, `dnds_concat.py` will concatenate all sample _.dnds_ files and a concatenated table will be exported by default at the parent directory.
 
 Pipeline Execution order:  
 
-1. [`dnds_from_table_invitro.py`](./scripts/dnds_from_table_invitro.py)
+1. [`dnds_from_table_invivo.py`](./scripts/dnds_from_table_invivo.py) or [`dnds_from_table_invitro.py`](./scripts/dnds_from_table_invitro.py)
 2. [`dnds_concat.py`](./scripts/dnds_concat.py)
 3. [`dnds_figure_invivo.py`](./scripts/dnds_figure_invivo.py) or [`dnds_figure_invitro.py`](./scripts/dnds_figure_invitro.py)
 
