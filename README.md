@@ -92,5 +92,10 @@ Pipeline Execution order:
 2. [`pc_signatures.py`](./scripts/pc_signatures.py)
 3. [`pc_shufflons.py`](./scripts/pc_shufflons.py)
 
+#### Plotting 
+[`Figure2_plots.R`](./scripts/Figure2_plots.R)
+[`Figure3_plots.R`](./scripts/Figure3_plots.R)
+[`Figure4_plots.R`](./scripts/Figure4_plots.R)
+[`Figure5_plots.R`](./scripts/Figure5_plots.R)
 
 
