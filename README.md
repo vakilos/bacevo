@@ -14,13 +14,13 @@ gut commensal Bacteroides thetaiotaomicron_
 [RefSeq link](https://ftp.ncbi.nlm.nih.gov/genomes/refseq/bacteria/Bacteroides_thetaiotaomicron/all_assembly_versions/GCF_000011065.1_ASM1106v1/) <br>
 - Prepare a _csv_ file that contains samples meta-data and add it in the project directory. It is expected that this files has the columns below:
 
-SampleID (sequencing library ID)
-MetagenomeID (same if metagenome - ID of the respective metagenomic sample if isolate)
-Isolate (ID for isolate if any)
-Mouse/Replicate (Mouse for _in vivo_ experiments, Replicate for _in vitro_)
-Day
-Cage/Mix (Cage for _in vivo_ experiments, Mix for _in vitro_)
-SampleType (label the type of sample)
+- &nbsp;&nbsp;SampleID (sequencing library ID)
+- &nbsp;&nbsp;MetagenomeID (same if metagenome - ID of the respective metagenomic sample if isolate)
+- &nbsp;&nbsp;Isolate (ID for isolate if any)
+- &nbsp;&nbsp;Mouse/Replicate (Mouse for _in vivo_ experiments, Replicate for _in vitro_)
+- &nbsp;&nbsp;Day (days post inoculation)
+- &nbsp;&nbsp;Cage/Mix (Cage for _in vivo_ experiments, Mix for _in vitro_)
+- &nbsp;&nbsp;SampleType (label the type of sample)
 
 1. Run [`ep_annotable.py`](./scripts/ep_annotable.py) to create a table that stores RefSeq's annotation data.
 2. Run [`ep_start.py`](./scripts/ep_start.py) in a SLURM configured system to submit an array job comprising 
