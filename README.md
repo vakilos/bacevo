@@ -85,9 +85,8 @@ for each mouse, which had read support of at least 100 reads. We then calculated
 of frequencies overtime for each pair of polymorphisms for each mouse (missing values were represented as zeros).
 For highly correlated pairs r > 0.8, we created clusters in a step process which maximized mean correlation within cluster at each step,
 recursively, until no polymorphisms remained unclustered. Then, shufflon signatures were defined as 
-polymorphisms under the same cluster within 1000 bp distance on the genome. All polymorphisms within shuffling regions
-were masked for the rest of the analysis - as it is hard to distinguish _de novo_ mutations from false positive calls that appear due to
-inversions/ recombinations in these regions.
+polymorphisms under the same cluster within 1000 bp distance on the genome. This was a primer for manual inspection of isolate genome assemblies. All polymorphisms within shuffling regions that were also validated from isolate genomes (Phase variation pipeline)
+were masked from the rest of the analysis - as it was hard to distinguish _de novo_ mutations and false positive calls that occured due to inversions/ recombinations in these regions.
 
 Pipeline Execution order:  
 
