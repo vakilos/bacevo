@@ -22,6 +22,7 @@ Prepare a _csv_ file that contains samples meta-data and add it in the project d
 - &nbsp;&nbsp;**Cage** or **Mix** (Cage for _in vivo_ experiments, Mix for _in vitro_)
 - &nbsp;&nbsp;**SampleType** (label the type of sample)
 
+#### Execution
 1. Run [`ep_annotable.py`](./scripts/ep_annotable.py) to create a table that stores RefSeq's annotation data.
 2. Run [`ep_start.py`](./scripts/ep_start.py) in a SLURM configured system to submit an array job comprising 
 multiple instances of the main pipeline which preprocesses sequencing reads and calls the breseq pipeline for a given number of samples.  
