@@ -7,6 +7,7 @@ This code has been developed for the data analysis in the following publications
 gut commensal Bacteroides thetaiotaomicron_ 
 <br> ii. _Rapid genetic diversification of Bacteroides thetaiotaomicron in mono-associated mice revealed through deep population-level sequencing_
 
+<br>
 
 ## Polymorphism detection
 Download RefSeq annotation files, for example here for B. theta VPI:
