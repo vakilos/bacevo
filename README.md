@@ -37,7 +37,7 @@ and estimate prevalence stats in the concatenated table, by running [`ep_merge_t
 ## Phase variation detection
 This pipeline identifies phase-variable regions in genome assemblies.
 
-<span style="color:red">Pipeline Execution order</span>  
+Pipeline Execution order:  
 
 1. [`ai_start.py`](./scripts/ai_start.py)
 2. [`ai_reverse_nodes.py`](./scripts/reverse_nodes.py) 
@@ -46,7 +46,7 @@ This pipeline identifies phase-variable regions in genome assemblies.
 
 ## _dNdS_ analysis
 
-<span style="color:red">Pipeline Execution order</span>  
+Pipeline Execution order:  
 
 1. [`dnds_from_table_invitro.py`](./scripts/dnds_from_table_invitro.py)
 2. [`dnds_concat.py`](./scripts/dnds_concat.py)
@@ -70,7 +70,7 @@ This pipeline identifies phase-variable regions in genome assemblies.
 
 #### **Intestinal compartments**
 
-<span style="color:red">Pipeline Execution order</span>  
+Pipeline Execution order:  
 
 1. [`ep_comp_significant.py`](./scripts/ep_comp_significant.py)
 2. [`Maaslin2.R`](./scripts/Maaslin2.R)
@@ -86,7 +86,7 @@ polymorphisms under the same cluster within 1000 bp distance on the genome. All 
 were masked for the rest of the analysis - as it is hard to distinguish _de novo_ mutations from false positive calls that appear due to
 inversions/ recombinations in these regions.
 
-<span style="color:red">Pipeline Execution order</span>  
+Pipeline Execution order:  
 
 1. [`pc_correlations.py`](./scripts/pc_correlations.py)
 2. [`pc_signatures.py`](./scripts/pc_signatures.py)
