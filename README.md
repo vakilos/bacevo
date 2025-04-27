@@ -11,7 +11,7 @@ gut commensal Bacteroides thetaiotaomicron_
 Download RefSeq annotation files, for example here for B. theta VPI:
 [RefSeq link](https://ftp.ncbi.nlm.nih.gov/genomes/refseq/bacteria/Bacteroides_thetaiotaomicron/all_assembly_versions/GCF_000011065.1_ASM1106v1/) <br>
 
-1. Run [`ep_annotable.py`](./scripts/ep_annotable.py) to create a table that stores RefSeq's annotation data.
+1. Run [`ep_annotable.py`](./bacevo/scripts/ep_annotable.py) to create a table that stores RefSeq's annotation data.
 2. Run [`ep_start.py`](./scripts/ep_start.py) in a SLURM configured system to submit an array job comprising 
 multiple instances of the main pipeline which preprocesses sequencing reads and calls the breseq pipeline for a given number of samples.  
 3. Run [`ep_align_stats.py`](./scripts/ep_align_stats.py) to create reports of alignment statistics (parsed from _**Breseq**_'s output).
