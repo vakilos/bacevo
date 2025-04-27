@@ -36,7 +36,7 @@ an _in vitro_ context respectively.  (exports  _<name\>\_FinalPolyTable.tsv_)
 and estimate prevalence stats in the concatenated table, by running [`ep_merge_tables.py`](./scripts/ep_merge_tables.py)
 
 ## Phase variation detection
-This pipeline identifies phase-variable regions in genome assemblies.
+This pipeline identifies phase-variable regions in genome assemblies. Genome assemblies and annotation should be organised in directories per sample. 
 
 Pipeline Execution order:  
 
@@ -46,6 +46,8 @@ Pipeline Execution order:
 4. [`ai_gene_alignment.py`](./scripts/ai_gene_alignment.py)
 
 ## _dNdS_ analysis
+This analysis relies on alignment files after mapping reads to a reference genome (BAM files).
+Files should be organised in directories per sample.
 
 Pipeline Execution order:  
 
