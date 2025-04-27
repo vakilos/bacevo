@@ -57,17 +57,17 @@ Pipeline Execution order:
 
 ## Scripts for analysis specific to the manuscripts:
 ### (i) _in vitro_:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - [`ep_figure_invitro.py`](./scripts/ep_figure_invitro.py) - exports various tables for plotting in R.
-<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - [`plot_invitro_figures.R`](./scripts/plot_invitro_figures.R) - creates plots 
+[`ep_figure_invitro.py`](./scripts/ep_figure_invitro.py) - exports various tables for plotting in R.
+<br>[`plot_invitro_figures.R`](./scripts/plot_invitro_figures.R) - creates plots 
 
 
 ### (ii) _in vivo_:
 [`ep_figures_invivo.py`] calls `ep_enrichment.py` (Enrichment analysis), `ep_turnover.py` (Polymorphism turnover and dynamics) and `ep_figure_pcoa.py` (PCoA on Sampletypes)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - [`ep_enrichment.py`](./scripts/ep_enrichment.py)
-<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - [`ep_turnover.py`](./scripts/ep_turnvover.py)
-<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - [`ep_figure_invivo.py`](./scripts/ep_figure_invivo.py)
-<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - [`ep_figure_pcoa.py`](./scripts/ep_figure_pcoa.py)
+[`ep_enrichment.py`](./scripts/ep_enrichment.py)
+<br>[`ep_turnover.py`](./scripts/ep_turnvover.py)
+<br>[`ep_figure_invivo.py`](./scripts/ep_figure_invivo.py)
+<br>[`ep_figure_pcoa.py`](./scripts/ep_figure_pcoa.py)
 
 #### **Intestinal compartments**
 
