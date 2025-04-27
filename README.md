@@ -11,17 +11,17 @@ gut commensal Bacteroides thetaiotaomicron_
 Download RefSeq annotation files, for example here for B. theta VPI:
 [RefSeq link](https://ftp.ncbi.nlm.nih.gov/genomes/refseq/bacteria/Bacteroides_thetaiotaomicron/all_assembly_versions/GCF_000011065.1_ASM1106v1/) <br>
 
-1. Run [`ep_annotable.py`](#ep_annotable.py) to create a table that stores RefSeq's annotation data.
-2. Run [`ep_start.py`](#ep_start.py) in a SLURM configured system to submit an array job comprising 
+1. Run [`ep_annotable.py`](./scripts/ep_annotable.py) to create a table that stores RefSeq's annotation data.
+2. Run [`ep_start.py`](./scripts/ep_start.py) in a SLURM configured system to submit an array job comprising 
 multiple instances of the main pipeline which preprocesses sequencing reads and calls the breseq pipeline for a given number of samples.  
-3. Run [`ep_align_stats.py`](#ep_align_stats.py) to create reports of alignment statistics (parsed from _**Breseq**_'s output).
-4. Run [`ep_parse.py`](#ep_parse.py) to combine **_Breseq_** output with meta-data. (exports  _<name\>\_AnnotatedPolyTable.txt_)
+3. Run [`ep_align_stats.py`](./scripts/ep_align_stats.py) to create reports of alignment statistics (parsed from _**Breseq**_'s output).
+4. Run [`ep_parse.py`](./scripts/ep_parse.py) to combine **_Breseq_** output with meta-data. (exports  _<name\>\_AnnotatedPolyTable.txt_)
 5. Apply additional filters on polymorphisms and calculate metrics/stats 
-by running [`ep_lyse_invivo.py`](#ep_lyse_invivo.py) for an _in vivo_ 
-or [`ep_lyse_invitro.py`](#ep_lyse_invitro.py) for 
+by running [`ep_lyse_invivo.py`](./scripts/ep_lyse_invivo.py) for an _in vivo_ 
+or [`ep_lyse_invitro.py`](./scripts/ep_lyse_invitro.py) for 
 an _in vitro_ context respectively.  (exports  _<name\>\_FinalPolyTable.tsv_)
 6. Merge multiple _<name\>\_FinalPolyTable.tsv_ tables
-and estimate prevalence stats in the concatenated table, by running [`ep_merge_tables.py`](#ep_merge_tables.py)
+and estimate prevalence stats in the concatenated table, by running [`ep_merge_tables.py`](./scripts/ep_merge_tables.py)
 
 ## Phase variation detection
 This pipeline identifies phase-variable regions in genome assemblies.
