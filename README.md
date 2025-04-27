@@ -37,7 +37,7 @@ an _in vitro_ context respectively.  (exports  _<name\>\_FinalPolyTable.tsv_)
 and estimate prevalence stats in the concatenated table, by running [`ep_merge_tables.py`](./scripts/ep_merge_tables.py)
 
 ## Phase variation detection
-This pipeline identifies phase-variable regions in genome assemblies. Genome assemblies and annotation should be organised in directories per sample. 
+This pipeline evaluates the presence of phase variants in genome assemblies. Genome assemblies and annotation should be organised in directories per sample. 
 
 Pipeline Execution order:  
 
